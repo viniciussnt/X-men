@@ -19,18 +19,30 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     opacity: 0.2;
 
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
 .cabecalho {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .selecao-de-personagens {
@@ -39,6 +51,12 @@ body::before {
     gap: 30px;
     min-height: calc(100vh - 152px);
     justify-content: center;
+}
+
+audio {
+    background-color: #ffffff;
+    height: 20px;
+    opacity: 0.5;
 }
 
 .selecao-de-personagens .lista-de-personagens {

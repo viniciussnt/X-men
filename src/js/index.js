@@ -1,3 +1,7 @@
+const audioPlayer = document.querySelector("audio");
+audioPlayer.volume = 0.5;
+audioPlayer.loop = true;
+
 const personagens = document.querySelectorAll('.personagem');
 
 personagens.forEach((personagem) => {
